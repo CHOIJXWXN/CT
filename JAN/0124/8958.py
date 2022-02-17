@@ -18,3 +18,24 @@ for i in range(T):                      # 테스트케이스 반복
 
 for score in scores:
     print(score)                        # 점수 출력
+
+
+
+t = int(input())
+score = []
+
+for i in range(t):
+    result = 0
+    cnt = 0
+
+    arr = list(input())
+    for i in arr:
+        if i == 'O':
+            cnt += 1
+        else:
+            cnt = 0
+        result += cnt
+    score.append(result)
+
+for i in score:
+    print(i)
