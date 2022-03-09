@@ -12,8 +12,8 @@ for i in range(n):
     if gender == 1:
         i = 1
         while idx * i <= N:
-            # abs(0 - 1) = 1, abs(1 - 1) = 0 즉, 0이면 1로 되고 1이면 0으로 바꿔주는 식
-            switch[idx * i - 1] = abs(switch[idx * i - 1] - 1)
+            # 1 - 0 = 1, 1 - 1 = 0 즉, 0이면 1로 되고 1이면 0으로 바꿔주는 식
+            switch[idx * i - 1] = 1 - switch[idx * i - 1]
             i += 1
     else:
         i = 0
@@ -21,7 +21,7 @@ for i in range(n):
             if idx - 1 - i < 0 or idx - 1 + i >= N:
                 break
             if switch[idx - 1 - i] == switch[idx - 1 + i]:
-                switch[idx - 1 - i], switch[idx - 1 + i] = abs(switch[idx - 1 - i] - 1), abs(switch[idx - 1 - i] - 1)
+                switch[idx - 1 - i], switch[idx - 1 + i] = 1 - switch[idx - 1 - i], 1 - switch[idx - 1 - i]
                 i += 1
             else:
                 break
