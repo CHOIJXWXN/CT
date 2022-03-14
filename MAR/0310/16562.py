@@ -6,6 +6,7 @@
 3. 다 더하기
 4. K보다 작으면 다 내고 K보다 많으면 찐따되기
 '''
+
 import sys
 sys.setrecursionlimit(10**6)
 
