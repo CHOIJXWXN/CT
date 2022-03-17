@@ -1,5 +1,6 @@
 '''
 피리 부는 사나이
+연결 요소 개수
 '''
 def dfs(r, c, idx):
     visited[r][c] = idx
