@@ -1,9 +1,6 @@
 '''
 보석 상자
 
-RRRRRRR
-BBBB
-
 질투심 n > ceil(7/n) + ceil(4/n) 명 > M명보다 작으면
 질투심 n-1 >
 ...
