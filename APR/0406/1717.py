@@ -2,22 +2,17 @@
 집합의 표현
 '''
 import sys
+
 sys.setrecursionlimit(10**6)
+
 def union(a, b):
-    a = find(a)
-    b = find(b)
-    if (a == b):
-        return
-    if a < b:
-        idx[b] = a
-    else:
-        idx[a] = b
+    a, b = find(a), find(b)
+    idx[max(a, b)] = min(a, b)
 
 def find(a):
     if a == idx[a]:
         return a
-    p = find(idx[a])
-    idx[a] = p
+    idx[a] = find(idx[a])
     return idx[a]
 
 n, m = map(int, input().split())
