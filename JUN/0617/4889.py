@@ -1,6 +1,12 @@
 """
 안정적인 문자열
 뒤에서부터 판별
+
+}}}{{{}}{}}{{}
+s =
+close   닫힌 괄호 개수    4
+cnt     연산 횟수        1 + (close//2)
+
 """
 import sys
 read = sys.stdin.readline

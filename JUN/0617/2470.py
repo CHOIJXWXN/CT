@@ -1,6 +1,7 @@
 """
 두 용액
-2467 참고
+투포인터
+2467 2473 참고
 """
 import sys
 read = sys.stdin.readline
